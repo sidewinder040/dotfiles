@@ -21,4 +21,6 @@ prompt fade blue
 
 #aliased
 alias sway-edit="vim ~/.config/sway/config"
+alias mirror-update="reflector -c GB -f 3 -p https,http"
+
 
