@@ -27,7 +27,7 @@ include /etc/sway/config-vars.d/*
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-exec swaybg -i ~/Pictures/51360.jpg -m fill
+exec swaybg -i ~/Pictures/wallpaper.png -m fill
 #
 # Example configuration:
 #
@@ -56,7 +56,7 @@ input * {
 
 input type:touchpad {
     tap enabled
-    natural_scroll enabled
+#    natural_scroll enabled
 }
 
 #
@@ -209,6 +209,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+gaps inner 5
 
 #
 # Status Bar:
