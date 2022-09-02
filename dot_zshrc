@@ -21,9 +21,14 @@ prompt fade blue
 
 setopt autocd
 
+alias ls='ls --color=auto'
 #aliased
 alias sway-edit="vim ~/.config/sway/config"
 alias mirror-update="reflector -c GB -f 3 -p https,http"
 alias emterm="emacs -q -nw"
+alias la="ls -a"
+alias ll="ls -lh"
+alias lla="ls -lah"
+alias gitst="git status"
 
 
