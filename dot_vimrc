@@ -38,7 +38,7 @@ set wildmenu
 "
 " My vimrc gist
 
-colorscheme delek
+colorscheme elflord
 
 :let mapleader = " "
 set timeout timeoutlen=500 " Set timeout length to 500 ms
