@@ -1,0 +1,6 @@
+theme = "snazzy"
+
+[editor]
+line-number = "relative"
+auto-completion = true
+auto-info = true
