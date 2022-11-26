@@ -31,4 +31,11 @@ alias ll="ls -lh"
 alias lla="ls -lah"
 alias gitst="git status"
 
+# Load colors.
+autoload -U colors
+colors
+# Allow for functions in the prompt.
+setopt PROMPT_SUBST
+RPROMPT="\$(pretty-git-prompt)"
+
 
