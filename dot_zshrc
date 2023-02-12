@@ -30,7 +30,10 @@ alias la="ls -a"
 alias ll="ls -lh"
 alias lla="ls -lah"
 alias gitst="git status"
-
+function mkdir
+{
+  command mkdir $1 && cd $1
+}
 # Load colors.
 autoload -U colors
 colors
@@ -38,4 +41,11 @@ colors
 setopt PROMPT_SUBST
 RPROMPT="\$(pretty-git-prompt)"
 
+# Path Env Var
+export PATH=~/.local/bin:/home/mark/.local/bin:/usr/lib64/ccache:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin
 
+datecode -t
+
+
+autoload bashcompinit
+bashcompinit
