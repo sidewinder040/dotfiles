@@ -43,6 +43,7 @@ RPROMPT="\$(pretty-git-prompt)"
 
 # Path Env Var
 export PATH=~/.local/bin:/home/mark/.local/bin:/usr/lib64/ccache:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin
+source ~/.profile
 
 datecode -t
 
