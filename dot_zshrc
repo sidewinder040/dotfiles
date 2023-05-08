@@ -8,11 +8,17 @@ compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
+
+# Git status
+autoload -Uz vcs_info
+precmd () { vcs_info }
+setopt prompt_subst
+PS1="\$vcs_info_msg_0_$PS1"
 
 # Prompt Customisation
 autoload -Uz promptinit
@@ -30,6 +36,7 @@ alias la="ls -a"
 alias ll="ls -lh"
 alias lla="ls -lah"
 alias gitst="git status"
+alias virt-session="virt-manager --connect qemu:///session"
 
 # Load colors.
 autoload -U colors
