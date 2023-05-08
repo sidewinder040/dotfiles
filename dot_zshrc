@@ -36,8 +36,15 @@ alias la="ls -a"
 alias ll="ls -lh"
 alias lla="ls -lah"
 alias gitst="git status"
+<<<<<<< HEAD
 alias virt-session="virt-manager --connect qemu:///session"
 
+=======
+function mkdir
+{
+  command mkdir $1 && cd $1
+}
+>>>>>>> 99c1c4daff182bd62c80d98fe4e48d8359cf4cd6
 # Load colors.
 autoload -U colors
 colors
@@ -45,4 +52,12 @@ colors
 setopt PROMPT_SUBST
 RPROMPT="\$(pretty-git-prompt)"
 
+# Path Env Var
+export PATH=~/.local/bin:/home/mark/.local/bin:/usr/lib64/ccache:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin
+source ~/.profile
 
+datecode -t
+
+
+autoload bashcompinit
+bashcompinit

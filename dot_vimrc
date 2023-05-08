@@ -74,6 +74,8 @@ Plug 'scrooloose/syntastic'
 Plug 'valloric/youcompleteme'
 Plug 'tpope/vim-fugitive'
 Plug 'powerline/powerline' 
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+
 " Initialize plugin system
 call plug#end()
 
