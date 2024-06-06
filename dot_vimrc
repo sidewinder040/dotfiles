@@ -37,6 +37,7 @@ set wildmenu
 " vim: set ft=vim :
 "
 " My vimrc gist
+set noreadonly
 
 colorscheme elflord
 
